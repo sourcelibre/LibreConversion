@@ -16,12 +16,15 @@ int main(int argc, char *argv[])
 
     QTranslator translator;
     // Load translation in each language:
-    bool ok = translator.load(":/lang_fr.qm"); // French
+    qInfo(QLocale::system().name().toStdString().c_str());
+    // Example: translations/libreconversion_fr.qm
+    bool ok = translator.load(QLocale::system(), // fr_FR, etc.
+            "libreconversion", "_", ":/translations/");
     if (ok) {
-        qInfo("Successfully loaded French translation.");
+        qInfo("Successfully loaded translation.");
         app.installTranslator(&translator);
     } else {
-        qCritical("Could not load French translation.");
+        qCritical("Could not load translation.");
     }
     QQmlApplicationEngine engine;
     engine.load(QUrl(QLatin1String("qrc:/main.qml")));

@@ -14,9 +14,14 @@ QML_IMPORT_PATH =
 include(deployment.pri)
 
 TRANSLATIONS = \
-    lang_en.ts \
-    lang_fr.ts \
-    lang_es.ts
+    translations/libreconversion_de.ts \
+    translations/libreconversion_en.ts \
+    translations/libreconversion_es.ts \
+    translations/libreconversion_fr.ts \
+    translations/libreconversion_pt.ts \
+    translations/libreconversion_zh_HANS.ts \
+    translations/libreconversion_zh_HANT.ts
+
 
 lupdate_only {
     SOURCES += \
