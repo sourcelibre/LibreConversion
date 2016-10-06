@@ -1,0 +1,8 @@
+*.pro.user
+*.pri
+*~
+.*.swp
+.DS_Store
+*.o
+*.so
+Makefile

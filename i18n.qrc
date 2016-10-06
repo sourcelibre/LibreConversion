@@ -1,0 +1,7 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+    <file alias="lang_fr">lang_fr.qm</file>
+    <file alias="lang_en">lang_en.qm</file>
+    <file alias="lang_es">lang_es.qm</file>
+</qresource>
+</RCC>
