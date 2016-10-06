@@ -1,5 +1,5 @@
 <!DOCTYPE RCC><RCC version="1.0">
-<qresource prefix="/translations">
+<qresource>
     <file>translations/libreconversion_de.qm</file>
     <file>translations/libreconversion_en.qm</file>
     <file>translations/libreconversion_es.qm</file>

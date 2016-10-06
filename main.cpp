@@ -18,8 +18,10 @@ int main(int argc, char *argv[])
     // Load translation in each language:
     qInfo(QLocale::system().name().toStdString().c_str());
     // Example: translations/libreconversion_fr.qm
-    bool ok = translator.load(QLocale::system(), // fr_FR, etc.
-            "libreconversion", "_", ":/translations/");
+    bool ok = translator.load(
+                QLocale() /*::system() */,
+                "libreconversion", "_",
+                ":/translations");
     if (ok) {
         qInfo("Successfully loaded translation.");
         app.installTranslator(&translator);
