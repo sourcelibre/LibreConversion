@@ -8,11 +8,14 @@
 #include <QQmlApplicationEngine>
 #include <QTranslator>
 #include <QTextStream>
+#include <QQuickStyle>
 
 int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QGuiApplication app(argc, argv);
+
+    QQuickStyle::setStyle("Material");
 
     QTranslator translator;
     // Load translation in each language:
